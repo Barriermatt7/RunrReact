@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-//import About from "./pages/About";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 
 import Wrapper from "./components/Wrapper";
@@ -13,8 +13,10 @@ const App = () => (
       <Navbar />
       <Wrapper>
         
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/search" component={Search} />
       </Wrapper>
       
     </div>
