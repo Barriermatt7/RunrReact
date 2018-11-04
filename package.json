@@ -1,0 +1,23 @@
+{
+    "name": "testyy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^3.0.2",
+      "concurrently": "^4.0.1",
+      "cors": "^2.8.4",
+      "express": "^4.16.4",
+      "if-env": "^1.0.4",
+      "mongoose": "^5.3.6",
+      "reactstrap": "^6.5.0"
+    }
+  }
