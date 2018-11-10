@@ -13,7 +13,7 @@
   
   .App__Form {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     height:600px;
     width:600px;
@@ -113,7 +113,7 @@
   }
   
   .FormField__Input::placeholder {
-    color: #616E7F;
+    color: white;
   }
   
   .FormField__Button {
@@ -128,7 +128,7 @@
   }
   
   .FormField__Link {
-    color: #66707D;
+    color: white;
     text-decoration: none;
     display: inline-block;
     border-bottom: 1.5px solid orange;
@@ -136,7 +136,7 @@
   }
   
   .FormField__CheckboxLabel {
-    color: #646F7D;
+    color: white;
     font-size: .9em;
   }
   
