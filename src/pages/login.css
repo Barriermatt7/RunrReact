@@ -13,7 +13,7 @@
   
   .App__Form {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     height:600px;
     width:600px;
@@ -25,6 +25,7 @@
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
+    border-radius:25px;
     
   }
   
@@ -90,7 +91,7 @@
   }
   
   .FormField {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
   }
   
   .FormField__Label {

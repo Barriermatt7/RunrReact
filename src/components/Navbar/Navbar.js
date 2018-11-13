@@ -6,7 +6,7 @@ import "./Navbar.css";
 const Navbar = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link className="navbar-brand" to="/">
-      Runr
+      <h1>Runr</h1>
     </Link>
     <div>
       <ul className="navbar-nav">
@@ -40,14 +40,14 @@ const Navbar = props => (
         </li>
         <li className="nav-item">
           <Link
-            to="/search"
+            to="/signup"
             className={
-              window.location.pathname === "/search"
+              window.location.pathname === "/sign up"
                 ? "nav-link active"
                 : "nav-link"
             }
           >
-            Search
+            Sign Up
           </Link>
         </li>
       </ul>

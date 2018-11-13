@@ -36,7 +36,7 @@ class App extends Component {
           </div>
 
             <div className="FormField">
-            <button className="FormField__Button mr-20">Log In</button> <a href="#" className="FormField__Link">I'm already a member</a>
+            <button className="FormField__Button mr-20">Log In</button> 
           
           </div>
         </form>
