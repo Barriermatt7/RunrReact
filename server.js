@@ -47,40 +47,37 @@ app.get('/tickets/*', function (req, res) {
     })
 });
 
-app.get('/stats/top', function (req, res) {
+app.get('/stats/days', function (req, res) {
     res.json([
         {
-            label: "Lauren",
-            value: Math.floor(Math.random() * 5) + 26
-        },
-        {
-            label: "Dave",
-            value: Math.floor(Math.random() * 5) + 13
-        },
-        {
-            label: "John",
-            value: Math.floor(Math.random() * 5) + 18
-        },
-        {
-            label: "Gregg",
-            value: Math.floor(Math.random() * 5) + 19
-        },
-        {
-            label: "Matt",
+            label: "Monday",
             value: Math.floor(Math.random() * 5) + 4
         },
         {
-            label: "Jaral",
-            value: Math.floor(Math.random() * 5) + 12
+            label: "Tuesday",
+            value: Math.floor(Math.random() * 5) + 7
         },
         {
-            label: "Bridget",
+            label: "Wednesday",
             value: Math.floor(Math.random() * 5) + 18
         },
         {
-            label: "Rob",
-            value: Math.floor(Math.random() * 5) + 7
+            label: "Thursday",
+            value: Math.floor(Math.random() * 5) + 19
+        },
+        {
+            label: "Friday",
+            value: Math.floor(Math.random() * 5) + 26
+        },
+        {
+            label: "Saturday",
+            value: Math.floor(Math.random() * 5) + 25
+        },
+        {
+            label: "Sunday",
+            value: Math.floor(Math.random() * 5) + 10
         }
+
     ]);    
 });
 

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 // Import components
-import Widget from '../components/Widget';
+import Widget from '../Widget/Widget';
 
 //Import graphing component
 import { Line } from 'react-chartjs-2';
 
 // Import styling
-import '../styles/GraphWidget.css';
+import './GraphWidget.css';
 
 class GraphWidget extends Component {
     constructor(props) {

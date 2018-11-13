@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Import styling
-import '../styles/Progress.css';
+import './Progress.css';
 
 class Progress extends Component {
     render() {

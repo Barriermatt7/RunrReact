@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Import styling
-import '../styles/ListDisplay.css';
+import './ListDisplay.css';
 
 class ListDisplay extends Component {
     render() {

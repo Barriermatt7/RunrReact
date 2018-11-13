@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 // Import components
-import Progress from '../components/Progress';
+import Progress from '../Progress/Progress';
 
 // Import styling
-import '../styles/ListItem.css';
+import './ListItem.css';
 
 class ListItem extends Component {
     render() {

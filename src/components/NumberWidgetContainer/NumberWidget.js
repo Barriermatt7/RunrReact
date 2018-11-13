@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 // Import components
-import Widget from '../components/Widget';
-import NumberDisplay from '../components/NumberDisplay';
-import Progress from '../components/Progress';
+import Widget from '../Widget/Widget';
+import NumberDisplay from './NumberDisplay';
+import Progress from '../Progress/Progress';
 
 //Import styling
-import '../styles/NumberWidget.css';
+import './NumberWidget.css';
 
 class NumberWidget extends Component {
     // Decide whether to show widget

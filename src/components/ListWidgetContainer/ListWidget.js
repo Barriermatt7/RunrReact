@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 // Import components
-import Widget from '../components/Widget';
-import ListDisplay from '../components/ListDisplay';
-import ListItem from '../components/ListItem';
+import Widget from '../Widget/Widget';
+import ListDisplay from './ListDisplay';
+import ListItem from './ListItem';
 
 // Import styling
-import '../styles/ListWidget.css';
+import './ListWidget.css';
 
 class ListWidget extends Component {
     //Sort items in descending order

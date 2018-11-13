@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 //Import styling
-import ListWidget from '../components/ListWidget';
+import ListWidget from './ListWidget';
 
 class ListWidgetContainer extends Component {
     constructor() {
@@ -24,7 +24,7 @@ class ListWidgetContainer extends Component {
     componentDidMount() {
         this.getData().then(_ => {
             // Re-fetch every minute
-            this.interval = setInterval(this.getData, 60000);
+            this.interval = setInterval(this.getData, 20000);
         });
     }
 

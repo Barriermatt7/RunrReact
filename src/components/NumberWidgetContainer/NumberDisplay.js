@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Import styling
-import '../styles/NumberDisplay.css';
+import './NumberDisplay.css';
 
 class NumberDisplay extends Component {
     render() {

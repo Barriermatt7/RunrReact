@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 // Import components
-import Loading from './Loading';
+import Loading from '../Loading/Loading';
 
 //Import styling
-import '../styles/Widget.css';
+import './Widget.css';
 
 class Widget extends Component {
     constructor(props) {
