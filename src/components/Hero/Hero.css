@@ -3,8 +3,11 @@
   background-size: cover;
   background-position: center;
   position: relative;
+<<<<<<< HEAD
   text-align: center;
   font-size: 50px
+=======
+>>>>>>> 70650659bf9192c840303d98246af34b977036f1
 }
 
 .hero::after {
@@ -29,8 +32,15 @@
 }
 
 .hero h1 {
+<<<<<<< HEAD
   font-size: 100px;
   padding-top: 140px;
   margin-top: 0;
 }
 
+=======
+  font-size: 60px;
+  padding-top: 140px;
+  margin-top: 0;
+}
+>>>>>>> 70650659bf9192c840303d98246af34b977036f1
