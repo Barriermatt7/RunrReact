@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './login.css';
-import './orange.jpg';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">      
+
       
-      <div className="App__Form">     
+
+      <div className="App">
+        
+      
+      <div className="App__Form">
+      
+
+      
 
       <div className="FormCenter">
         <form className="FormFields" onSubmit={this.handleSubmit}>
@@ -26,23 +33,22 @@ class App extends Component {
           <input type="text" id="email" className="FormField__Input" placeholder="Enter your email" name="email"/>
           </div>
 
+
           <div className="FormField">
           <label className="FormField__CheckboxLabel">
             <input className="FormField__Checkbox" type="checkbox" name="hasAgreed"/> I agree all statements in <a href="" className="FormField__TermsLink">terms of service</a>
           </label>
 
           </div>
-
           <div className="FormField">
-            <button className="FormField__Button mr-20">Sign Up</button> <a href="#" className="FormField__Link">I'm already a member</a>
+            <button className="FormField__Button mr-20">Sign Up</button> 
+            <a href="#" className="FormField__Link">I'm already a member</a>
           
           </div>
-
         </form>
       
       </div>
       
-
       
         
       
@@ -54,5 +60,4 @@ class App extends Component {
       );
   }
 }
-
 export default App;

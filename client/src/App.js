@@ -1,41 +1,46 @@
-
-import React from "react";
+// @flow
+import React, {Component, createRef} from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
-//import About from "./pages/About";
-import Navbar from "./components/Navbar";
-
+import Signup from "./components/Signup.js";
 import Wrapper from "./components/Wrapper";
-
-const App = () => (
-  <Router>
-    <div>
-      <Navbar />
-      <Wrapper>
-        
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-      </Wrapper>
-      
-    </div>
-  </Router>
-);
-
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import Login from './component/Login.js'
+import Home from "./Pages/Home.js";
+import Login from "./Pages/Login";
+import Navbar from "./components/Navbar";
 import './App.css';
+import "leaflet/dist/leaflet.css";
+//import '../node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css';
+import L from 'leaflet';
+import MapComponent from './components/Map/Map';
+
 
 class App extends Component {
+  
+  
   render() {
+  
+
     return (
-      <div className="App">
-       <Login/>
+      <React.Fragment>
+      
+      <Router>
+      <div>
+      <Navbar />
+   
+        
+        
+        <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup}/>
+          <Route exact path="/home" component={Home} />
+          <Route path="/map" component={MapComponent} />
+           
+        
+        
       </div>
-    );
+    </Router>
+    </React.Fragment>
+      
+    )
   }
 }
-
 
 export default App;

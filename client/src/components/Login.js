@@ -1,7 +1,7 @@
 import React, {Component} from 'react'; 
 import API from '../api/users.js';
-
-export default class Login extends Component{
+import { withRouter } from "react-router-dom";
+class Login extends Component{
 
     state = {
         username:"",
@@ -12,7 +12,11 @@ export default class Login extends Component{
         console.log("I'm signing up baby", this.state);
         API.login(this.state).then(function(response){
             console.log(response);
-        })
+            // if (response.status == 200) {
+            //     this.history.push("/home");
+            // }
+        
+        });
     }
     captureInput = (event) => {
         this.setState({
@@ -29,3 +33,6 @@ export default class Login extends Component{
         )
     }
 }
+
+
+export default withRouter(Login);

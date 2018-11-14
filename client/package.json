@@ -5,8 +5,16 @@
   "proxy": "http://localhost:8080",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-preset-flow": "^6.23.0",
+    "camelize": "^1.0.0",
+    "flow-bin": "^0.86.0",
+    "leaflet": "^1.3.4",
+    "leaflet-routing-machine": "^3.2.12",
+    "prop-types": "^15.6.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-leaflet": "^2.1.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5"
   },
   "scripts": {

@@ -1,23 +1,31 @@
 {
-    "name": "testyy",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "client": "cd client && yarn start",
-      "server": "nodemon server.js",
-      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "bcrypt": "^3.0.2",
-      "concurrently": "^4.0.1",
-      "cors": "^2.8.4",
-      "express": "^4.16.4",
-      "if-env": "^1.0.4",
-      "mongoose": "^5.3.6",
-      "reactstrap": "^6.5.0"
-    }
+  "name": "testyy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-flow": "^6.23.0",
+    "bcrypt": "^3.0.2",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "flow-bin": "^0.86.0",
+    "if-env": "^1.0.4",
+    "leaflet": "^1.3.4",
+    "leaflet-routing-machine": "^3.2.12",
+    "mongoose": "^5.3.6",
+    "react-dom": "^16.6.0",
+    "react-leaflet": "^2.1.1",
+    "react-leaflet-distance-marker": "^0.1.1",
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^6.5.0"
   }
+}
