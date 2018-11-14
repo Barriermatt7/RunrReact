@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
 // Import widgets being used in this component
-import ListWidgetContainer from './ListWidgetContainer/ListWidgetContainer';
-import NumberWidgetContainer from './NumberWidgetContainer/NumberWidgetContainer';
-import GraphWidgetContainer from './GraphWidgetContainer/GraphWidgetContainer';
+import ListWidgetContainer from '../components/ListWidgetContainer/ListWidgetContainer';
+import NumberWidgetContainer from '../components/NumberWidgetContainer/NumberWidgetContainer';
+import GraphWidgetContainer from '../components/GraphWidgetContainer/GraphWidgetContainer';
 
 // Add in styles
-import '../styles/App.css';
+import '../pages/Datapage.css';
 
 
 
-class App extends Component {
+class Datapage extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="Datapage">
                 {/* Add Widgets to display */}
                 <GraphWidgetContainer href="http://localhost:3001/tickets/progression" heading="Tickets Over Time" colspan={2} rowspan={2} />
                 <ListWidgetContainer href="http://localhost:3001/stats/days" heading="Top Rides Per Day" rowspan={3} />
@@ -28,4 +28,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Datapage;
