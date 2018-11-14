@@ -1,23 +1,27 @@
 {
-    "name": "testyy",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "client": "cd client && yarn start",
-      "server": "nodemon server.js",
-      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "bcrypt": "^3.0.2",
-      "concurrently": "^4.0.1",
-      "cors": "^2.8.4",
-      "express": "^4.16.4",
-      "if-env": "^1.0.4",
-      "mongoose": "^5.3.6",
-      "reactstrap": "^6.5.0"
-    }
+  "name": "react-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.0",
+    "chart.js": "^2.5.0",
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "react-chartjs-2": "^2.0.5",
+    "react-dom": "^15.4.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "serve": "node server.js",
+    "serve-delayed": "node server.js delayresponse"
   }
+}
