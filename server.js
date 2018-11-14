@@ -1,6 +1,20 @@
 var express = require('express');
 var app = express();
 
+const PORT = process.env.PORT || 3001;
+
+// Define middleware here
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(express.static("client/public"));
+
+const userRoutes = require("./routes/user.js");
+app.use(userRoutes);
+
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactfullstack");
+
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     if(process.argv.includes('delayresponse')) {
@@ -89,6 +103,8 @@ app.get('/stats/*', function (req, res) {
     });
 });
 
-app.listen(3001, function () {
+
+
+app.listen(PORT, function () {
     console.log('Data being served from http://localhost:3001');
 });
