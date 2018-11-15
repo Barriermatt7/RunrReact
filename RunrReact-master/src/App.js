@@ -1,64 +1,31 @@
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Sign from "./pages/Signup";
+import Navbar from "./components/Navbar";
+import Datapage from "./pages/Datapage"
 
-import { Link } from "react-router-dom";
-import { Nav, Navbar, NavItem } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
-import React, { Component, Fragment } from "react";
+import Wrapper from "./components/Wrapper";
 
 
-import Routes from "./Routes";
-import "./App.css";
+const App = () => (
+  <Router> 
+    <div>
+      <Navbar />
+      <Wrapper>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Sign} />
+        <Route exact path="/datapage" component={Datapage} />
+      </Wrapper>
+      
+    </div>
+  </Router>
+);
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  
-    this.state = {
-      isAuthenticated: false
-    };
-  }
-  
-  userHasAuthenticated = authenticated => {
-    this.setState({ isAuthenticated: authenticated });
-  }
-  handleLogout = event => {
-    this.userHasAuthenticated(false);
-  }
-  render() {
-    const childProps = {
-      isAuthenticated: this.state.isAuthenticated,
-      userHasAuthenticated: this.userHasAuthenticated
-    };
-    
-    return (
-      <div className="App container">
-        <Navbar fluid collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <Link to="/">Runr</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-            {this.state.isAuthenticated
-              ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
-              : <Fragment>
-                  <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/login">
-                    <NavItem>Login</NavItem>
-                  </LinkContainer>
-                </Fragment>
-            }
-            
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <Routes  childProps={childProps} />
-      </div>
-    );
-  }
-};
 
-  export default (App);
+
+
+export default (App);
