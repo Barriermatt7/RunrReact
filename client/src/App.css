@@ -8,11 +8,15 @@
     display: flex;
     color:white;
     background-image: url("https://www.google.com/search?q=orange+picture&safe=off&rlz=1C1SQJL_enUS791US791&tbm=isch&source=iu&ictx=1&fir=r3FQjSfYZ5S-sM%253A%252CZlkSoOYyI-ywJM%252C_&usg=AI4_-kQ4kkGgw9q9ftVBSaQJFAUleypdow&sa=X&ved=2ahUKEwjE2d-88rbeAhWB8oMKHblWDd4Q9QEwAXoECAUQBg#imgrc=r3FQjSfYZ5S-sM:");
-    
    
-    
   }
-  
+  .message-form {
+    z-index: 999;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    max-width: 300px;
+  }
   
   
   .App__Form {

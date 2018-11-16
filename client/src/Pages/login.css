@@ -3,14 +3,17 @@
     height: 1000px;
     display: flex;
     color:white;
-        
+    background-image: url("city.jpg");
+    
+   
+    
   }
   
   
   
   .App__Form {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     height:600px;
     width:600px;
@@ -22,6 +25,7 @@
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
+    border-radius:25px;
     
   }
   
@@ -87,7 +91,7 @@
   }
   
   .FormField {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
   }
   
   .FormField__Label {
@@ -110,7 +114,7 @@
   }
   
   .FormField__Input::placeholder {
-    color: #616E7F;
+    color: white;
   }
   
   .FormField__Button {
@@ -125,7 +129,7 @@
   }
   
   .FormField__Link {
-    color: #66707D;
+    color: white;
     text-decoration: none;
     display: inline-block;
     border-bottom: 1.5px solid orange;
@@ -133,7 +137,7 @@
   }
   
   .FormField__CheckboxLabel {
-    color: #646F7D;
+    color: white;
     font-size: .9em;
   }
   

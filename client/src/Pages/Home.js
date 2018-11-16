@@ -1,16 +1,15 @@
 import React from "react";
-// import Hero from "../component/Hero";
-// import Container from "../component/Container";
-// import Row from "../component/Row";
-// import Col from "../component/Col";
-import {Col, Row, Container, Hero} from "reactstrap"
+import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 
 const About = () => (
   <div>
-    <div backgroundImage="http://kevart.net/data/out/10/809196.jpg">
+    <Hero backgroundImage="http://kevart.net/data/out/10/809196.jpg">
       <h1>Runr</h1>
       <h2>Here you go!</h2>
-    </div>
+    </Hero>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
@@ -20,7 +19,7 @@ const About = () => (
       <Row>
         <Col size="md-12">
           <p>
-            Description goes in here!
+            An App to help professional drivers lives easier. 
           </p>
           
           
