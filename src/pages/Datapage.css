@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #ecf0f1;
+    background-color: #73bb18;
+  }
+  
+.Datapage {
+    display: block;
+    min-height: 100vh;
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Datapage > * + * {
+    margin-top: 1rem;
+}
+
+/* autoprefixer: off */
+@supports(display:grid) {
+    .Datapage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .Datapage > * + * {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .Datapage {
+        display: block;
+    }
+
+    .Datapage > * + * {
+        margin-top: 1rem;
+    }
+}
